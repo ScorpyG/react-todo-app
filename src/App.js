@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 function App() {
   // Toggle add-task input box
   const [showAddTask, setShowAddTask] = useState(false);
+
   // Hook with useState
   const [tasks, setTasks] = useState ([
     // Sample tasks
