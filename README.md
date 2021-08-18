@@ -3,7 +3,7 @@
 - This is my first React App based on Crash Course Tutorial. Learning basic concepts like React State, building components, React-Hook, UseState
 - Back-end(MongoDB) implimentation is currently in-development.
 
-<a href="https://scorpyg.github.io/react-todo-app/" targer="_blank">View Page!</a>
+<a href="https://scorpyg.github.io/react-todo-app/">View Page!</a>
 
 ## Available Scripts
 
