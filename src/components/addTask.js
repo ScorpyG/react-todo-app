@@ -1,4 +1,8 @@
 import {useState} from 'react'
+import DatePicker from 'react-datepicker'
+import "react-datepicker/dist/react-datepicker.css";
+
+
 const AddTask = ({onAdd}) => {
     const [text, setText] = useState('');
     const [day, setDate] = useState('');
@@ -34,11 +38,9 @@ const AddTask = ({onAdd}) => {
 
             <div className='form-control'>
                 <label>Day & Time</label>
-                <input 
-                    type='text' 
-                    placeholder='Add date & time'
-                    value={day} 
-                    onChange={(e) => setDate(e.target.value)}
+                <DatePicker 
+                    // selected={this.state.date}
+                    // onChange={this.onChangeDate}    
                 />
             </div>
 
