@@ -1,11 +1,12 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 
 const AddTask = ({onAdd}) => {
     const [text, setText] = useState('');
-    const [day, setDate] = useState('');
+    const [startDate, setStartDate] = useState(new Date());
     const [reminder, setReminder] = useState(false);
+
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -15,11 +16,11 @@ const AddTask = ({onAdd}) => {
             return;
         }
 
-        onAdd({text, day, reminder});
+        onAdd({text, startDate, reminder});
 
         // Clear the form
         setText('');
-        setDate('');
+        setStartDate('');
         setReminder(false);
     }
 
@@ -38,8 +39,9 @@ const AddTask = ({onAdd}) => {
             <div className='form-control'>
                 <label>Day & Time</label>
                 <DatePicker 
-                    // selected={this.state.date}
-                    // onChange={this.onChangeDate}    
+                    placeholderText = 'Pick the date'
+                    selected={startDate}
+                    onChange={date => setStartDate(date)}    
                 />
             </div>
 
