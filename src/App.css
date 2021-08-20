@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(150, 150, 150);
+  background-color: white;
 }
 
 .container {
@@ -16,7 +16,6 @@ body {
   margin: 30px auto;
   overflow: auto;
   /* min-height: 200px; */
-  background-color: white;
   border: 1px solid steelblue;
   padding: 30px 30px 15px 30px;
   border-radius: 5px;
